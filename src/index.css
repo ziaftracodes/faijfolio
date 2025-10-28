@@ -8,52 +8,54 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
+    --background: 220 25% 6%;
+    --foreground: 210 20% 98%;
 
-    --card: 240 10% 8%;
-    --card-foreground: 0 0% 98%;
+    --card: 220 20% 10%;
+    --card-foreground: 210 20% 98%;
 
-    --popover: 240 10% 8%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 220 20% 10%;
+    --popover-foreground: 210 20% 98%;
 
-    --primary: 193 100% 60%;
-    --primary-foreground: 240 10% 3.9%;
+    --primary: 199 89% 48%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 270 80% 65%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 217 91% 60%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 240 10% 15%;
-    --muted-foreground: 240 5% 64.9%;
+    --muted: 220 15% 18%;
+    --muted-foreground: 220 10% 65%;
 
-    --accent: 330 85% 65%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 142 76% 36%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 240 20% 20%;
-    --input: 240 20% 20%;
-    --ring: 193 100% 60%;
+    --border: 220 15% 18%;
+    --input: 220 15% 18%;
+    --ring: 199 89% 48%;
 
-    --radius: 1rem;
+    --radius: 0.75rem;
 
-    /* Futuristic design tokens */
-    --glass-bg: 240 10% 8%;
-    --glass-border: 0 0% 100%;
-    --neon-cyan: 193 100% 60%;
-    --neon-purple: 270 80% 65%;
-    --neon-pink: 330 85% 65%;
+    /* Software dev design tokens */
+    --code-blue: 199 89% 48%;
+    --terminal-green: 142 76% 36%;
+    --electric-blue: 217 91% 60%;
+    --deep-navy: 220 25% 6%;
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(193 100% 60%), hsl(270 80% 65%));
-    --gradient-secondary: linear-gradient(135deg, hsl(270 80% 65%), hsl(330 85% 65%));
-    --gradient-accent: linear-gradient(135deg, hsl(193 100% 60%), hsl(330 85% 65%));
+    --gradient-primary: linear-gradient(135deg, hsl(199 89% 48%), hsl(217 91% 60%));
+    --gradient-secondary: linear-gradient(135deg, hsl(217 91% 60%), hsl(142 76% 36%));
+    --gradient-accent: linear-gradient(135deg, hsl(199 89% 48%), hsl(142 76% 36%));
+    --gradient-mesh: radial-gradient(at 40% 20%, hsl(199 89% 48% / 0.15) 0px, transparent 50%),
+                     radial-gradient(at 80% 0%, hsl(217 91% 60% / 0.15) 0px, transparent 50%),
+                     radial-gradient(at 0% 50%, hsl(142 76% 36% / 0.1) 0px, transparent 50%);
     
     /* Glows */
-    --glow-cyan: 0 0 40px hsl(193 100% 60% / 0.5);
-    --glow-purple: 0 0 40px hsl(270 80% 65% / 0.5);
-    --glow-pink: 0 0 40px hsl(330 85% 65% / 0.5);
+    --glow-blue: 0 0 40px hsl(199 89% 48% / 0.4);
+    --glow-electric: 0 0 40px hsl(217 91% 60% / 0.4);
+    --glow-green: 0 0 30px hsl(142 76% 36% / 0.3);
 
     /* Transitions */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
