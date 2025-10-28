@@ -8,13 +8,69 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 220 25% 6%;
+    /* Light theme - Warm palette (default) */
+    --background: 30 25% 95%;
+    --foreground: 30 10% 15%;
+
+    --card: 30 20% 98%;
+    --card-foreground: 30 10% 15%;
+
+    --popover: 30 20% 98%;
+    --popover-foreground: 30 10% 15%;
+
+    --primary: 25 90% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 35 85% 60%;
+    --secondary-foreground: 30 10% 15%;
+
+    --muted: 30 15% 85%;
+    --muted-foreground: 30 10% 40%;
+
+    --accent: 15 80% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 30 15% 88%;
+    --input: 30 15% 88%;
+    --ring: 25 90% 55%;
+
+    --radius: 0.75rem;
+
+    /* Warm design tokens for light mode */
+    --code-blue: 25 90% 55%;
+    --terminal-green: 140 65% 45%;
+    --electric-blue: 35 85% 60%;
+    --warm-cream: 30 25% 95%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(25 90% 55%), hsl(35 85% 60%));
+    --gradient-secondary: linear-gradient(135deg, hsl(35 85% 60%), hsl(140 65% 45%));
+    --gradient-accent: linear-gradient(135deg, hsl(25 90% 55%), hsl(15 80% 50%));
+    --gradient-mesh: radial-gradient(at 40% 20%, hsl(25 90% 55% / 0.08) 0px, transparent 50%),
+                     radial-gradient(at 80% 0%, hsl(35 85% 60% / 0.08) 0px, transparent 50%),
+                     radial-gradient(at 0% 50%, hsl(140 65% 45% / 0.05) 0px, transparent 50%);
+    
+    /* Glows */
+    --glow-blue: 0 0 40px hsl(25 90% 55% / 0.2);
+    --glow-electric: 0 0 40px hsl(35 85% 60% / 0.2);
+    --glow-green: 0 0 30px hsl(140 65% 45% / 0.15);
+
+    /* Transitions */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    /* Dark theme - Darker software dev palette */
+    --background: 220 30% 4%;
     --foreground: 210 20% 98%;
 
-    --card: 220 20% 10%;
+    --card: 220 25% 6%;
     --card-foreground: 210 20% 98%;
 
-    --popover: 220 20% 10%;
+    --popover: 220 25% 6%;
     --popover-foreground: 210 20% 98%;
 
     --primary: 199 89% 48%;
@@ -23,7 +79,7 @@ All colors MUST be HSL.
     --secondary: 217 91% 60%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 15% 18%;
+    --muted: 220 20% 12%;
     --muted-foreground: 220 10% 65%;
 
     --accent: 142 76% 36%;
@@ -32,8 +88,8 @@ All colors MUST be HSL.
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 15% 18%;
-    --input: 220 15% 18%;
+    --border: 220 20% 12%;
+    --input: 220 20% 12%;
     --ring: 199 89% 48%;
 
     --radius: 0.75rem;
@@ -42,15 +98,15 @@ All colors MUST be HSL.
     --code-blue: 199 89% 48%;
     --terminal-green: 142 76% 36%;
     --electric-blue: 217 91% 60%;
-    --deep-navy: 220 25% 6%;
+    --deep-navy: 220 30% 4%;
     
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(199 89% 48%), hsl(217 91% 60%));
     --gradient-secondary: linear-gradient(135deg, hsl(217 91% 60%), hsl(142 76% 36%));
     --gradient-accent: linear-gradient(135deg, hsl(199 89% 48%), hsl(142 76% 36%));
-    --gradient-mesh: radial-gradient(at 40% 20%, hsl(199 89% 48% / 0.15) 0px, transparent 50%),
-                     radial-gradient(at 80% 0%, hsl(217 91% 60% / 0.15) 0px, transparent 50%),
-                     radial-gradient(at 0% 50%, hsl(142 76% 36% / 0.1) 0px, transparent 50%);
+    --gradient-mesh: radial-gradient(at 40% 20%, hsl(199 89% 48% / 0.12) 0px, transparent 50%),
+                     radial-gradient(at 80% 0%, hsl(217 91% 60% / 0.12) 0px, transparent 50%),
+                     radial-gradient(at 0% 50%, hsl(142 76% 36% / 0.08) 0px, transparent 50%);
     
     /* Glows */
     --glow-blue: 0 0 40px hsl(199 89% 48% / 0.4);

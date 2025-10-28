@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 py-20">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 py-20 pt-28">
       {/* Animated mesh background */}
       <div className="absolute inset-0" style={{ background: 'var(--gradient-mesh)' }} />
       
