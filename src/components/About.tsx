@@ -14,7 +14,7 @@ export const About = () => {
           
           <h2 className="text-4xl md:text-5xl font-bold">
             <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-              Building Digital Solutions
+              Faij Un Navi Khan
             </span>
           </h2>
         </div>
