@@ -62,7 +62,7 @@ export const About = () => {
         
         <div className="mt-16 p-8 rounded-2xl bg-card/40 backdrop-blur-xl border border-primary/20 animate-fade-in">
           <p className="text-lg text-muted-foreground leading-relaxed max-w-4xl mx-auto text-center">
-            I'm a passionate software developer with expertise in building modern web applications. 
+            I'm a passionate Front End Web Dev with expertise in building modern web applications. 
             My focus is on creating seamless user experiences while maintaining robust, scalable architectures. 
             I love turning complex problems into simple, elegant solutions.
           </p>
