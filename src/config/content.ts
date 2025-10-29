@@ -97,7 +97,7 @@ export const portfolioContent = {
     categories: [
       {
         name: "Frontend",
-        skills: ["HTML", "CSS", JS", "VIBE CODING", "VITE"],
+        skills: ["HTML", "CSS", "JS", "VIBE CODING", "VITE"],
       },
       {
         name: "Backend",
