@@ -97,15 +97,15 @@ export const portfolioContent = {
     categories: [
       {
         name: "Frontend",
-        skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Vue.js"],
+        skills: ["HTML", "CSS", JS", "VIBE CODING", "VITE"],
       },
       {
         name: "Backend",
-        skills: ["Node.js", "Express", "PostgreSQL", "MongoDB", "GraphQL"],
+        skills: ["work in Progress"],
       },
       {
         name: "Tools & Others",
-        skills: ["Git", "Docker", "AWS", "CI/CD", "Agile"],
+        skills: ["Git", "OpenAI", "Google AI studio", "VS Code", "Communications"],
       },
     ],
   },
@@ -114,15 +114,15 @@ export const portfolioContent = {
   contact: {
     title: "Get In Touch",
     description: "Have a project in mind? Let's work together to build something great.",
-    email: "hello@example.com",
+    email: "ziaftra.codes@gmail.com",
     social: [
-      { platform: "GitHub", url: "https://github.com/yourusername", icon: "Github" },
+      { platform: "GitHub", url: "https://github.com/ziaftracodes", icon: "Github" },
       { platform: "LinkedIn", url: "https://linkedin.com/in/yourusername", icon: "Linkedin" },
-      { platform: "Twitter", url: "https://twitter.com/yourusername", icon: "Twitter" },
+       { platform: "Instagram", url: "https://instagram.com/fayz.khn" icon: "Instagram" },
     ],
     form: {
       namePlaceholder: "Your Name",
-      emailPlaceholder: "your.email@example.com",
+      emailPlaceholder: "ziaftra.codes@gmail.com",
       messagePlaceholder: "Tell me about your project...",
       submitButton: "Send Message",
     },
@@ -145,11 +145,11 @@ export const portfolioContent = {
 
   // Footer
   footer: {
-    copyright: "© 2024 All rights reserved",
+    copyright: "© 2025 All rights reserved",
     socialLinks: [
       { platform: "GitHub", url: "https://github.com/yourusername" },
       { platform: "LinkedIn", url: "https://linkedin.com/in/yourusername" },
-      { platform: "Twitter", url: "https://twitter.com/yourusername" },
+      { platform: "Instagram", url: "https://instagram.com/fayz.khn" },
     ],
   },
 };
