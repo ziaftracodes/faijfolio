@@ -6,10 +6,17 @@ import { Skills } from "@/components/Skills";
 import { Contact } from "@/components/Contact";
 import { RequestWork } from "@/components/RequestWork";
 import { SectionTransition } from "@/components/SectionTransition";
+import { Scene3D } from "@/components/Scene3D";
+import { Suspense } from "react";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      {/* 3D Background Scene */}
+      <Suspense fallback={null}>
+        <Scene3D />
+      </Suspense>
+      
       <Navigation />
       <Hero />
       

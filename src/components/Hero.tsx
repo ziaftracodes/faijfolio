@@ -2,6 +2,7 @@ import { ArrowRight, Mail, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "next-themes";
 import { portfolioContent } from "@/config/content";
+import { ParallaxSection } from "./ParallaxSection";
 
 export const Hero = () => {
   const { theme } = useTheme();
@@ -12,16 +13,23 @@ export const Hero = () => {
       {/* Animated mesh background */}
       <div className="absolute inset-0" style={{ background: 'var(--gradient-mesh)' }} />
       
-      {/* Floating orbs */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/15 rounded-full blur-[120px] animate-float" />
-      <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-secondary/15 rounded-full blur-[140px] animate-float" style={{ animationDelay: "2s" }} />
-      <div className="absolute top-1/2 right-1/3 w-80 h-80 bg-accent/10 rounded-full blur-[100px] animate-float" style={{ animationDelay: "4s" }} />
+      {/* Floating orbs with depth */}
+      <ParallaxSection speed={0.3}>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[120px] animate-float" />
+      </ParallaxSection>
+      <ParallaxSection speed={0.5}>
+        <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-secondary/20 rounded-full blur-[140px] animate-float" style={{ animationDelay: "2s" }} />
+      </ParallaxSection>
+      <ParallaxSection speed={0.4}>
+        <div className="absolute top-1/2 right-1/3 w-80 h-80 bg-accent/15 rounded-full blur-[100px] animate-float" style={{ animationDelay: "4s" }} />
+      </ParallaxSection>
       
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto w-full">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left side - Text content */}
-          <div className="space-y-8 animate-fade-in-up">
+          <ParallaxSection speed={0.2}>
+            <div className="space-y-8 animate-fade-in-up">
             <div className="inline-block px-4 py-2 rounded-full bg-card/60 backdrop-blur-xl border border-primary/20 text-primary text-sm font-medium liquid-glass">
               {portfolioContent.hero.badge}
             </div>
@@ -64,10 +72,12 @@ export const Hero = () => {
                 </a>
               </Button>
             </div>
-          </div>
+            </div>
+          </ParallaxSection>
           
           {/* Right side - Photo and CTAs */}
-          <div className="flex flex-col items-center space-y-8 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+          <ParallaxSection speed={0.15}>
+            <div className="flex flex-col items-center space-y-8 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
             {/* Photo placeholder with glass effect */}
             <div className="relative group">
               <div className="w-80 h-80 rounded-3xl bg-gradient-to-br from-primary/20 via-secondary/20 to-accent/20 backdrop-blur-xl border border-primary/30 flex items-center justify-center overflow-hidden liquid-glass">
@@ -116,7 +126,8 @@ export const Hero = () => {
                 </a>
               </Button>
             </div>
-          </div>
+            </div>
+          </ParallaxSection>
         </div>
       </div>
       
