@@ -30,10 +30,10 @@ export const portfolioContent = {
   hero: {
     badge: "💻 Software Developer",
     title: {
-      line1: "Building",
-      line2: "Digital Solutions",
+      line1: "Portfolio",
+      line2: "Faij Un Navi Khan",
     },
-    description: "Full-stack developer crafting modern web applications with clean code and exceptional user experiences",
+    description: "Front end developer with clean code and exceptional user experiences",
     ctas: [
       { label: "View My Work", href: "#work", icon: "ArrowRight" },
       { label: "Contact Me", href: "#contact", icon: "Mail" },
@@ -46,7 +46,7 @@ export const portfolioContent = {
 
   // Work/Projects Section
   work: {
-    title: "Featured Work",
+    title: "My Works and Projects",
     description: "Explore my latest projects and technical achievements",
     projects: [
       {
@@ -76,12 +76,12 @@ export const portfolioContent = {
   // About Section
   about: {
     title: "About Me",
-    description: "Passionate software developer with expertise in building scalable web applications. I specialize in modern JavaScript frameworks and have a keen eye for creating intuitive user experiences.",
+    description: "Passionate software developer with expertise in building scalable web applications. I specialize in front end web developments and have a vibe coding and prompt enigineering skills I also keen eye for creating intuitive user experiences.",
     highlights: [
-      "5+ years of experience in web development",
-      "Expertise in React, Node.js, and TypeScript",
+      "Bachelors In Computer Science ",
+      "Expertise in Html, Css, JS, Vibe Coding ",
       "Strong focus on performance and accessibility",
-      "Open source contributor",
+      "A great Communicator",
     ],
     stats: [
       { label: "Years Experience", value: "5+" },
