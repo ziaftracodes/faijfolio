@@ -1,11 +1,11 @@
-import { Mail, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, Github, Linkedin, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const Contact = () => {
   const socialLinks = [
     { icon: Github, label: "GitHub", href: "https://github.com" },
     { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com" },
-    { icon: Twitter, label: "Twitter", href: "https://twitter.com" },
+    { icon: Instagram, label: "Instagram", href: "https://instagram.com/fayz.khn" },
   ];
 
   return (
@@ -36,7 +36,7 @@ export const Contact = () => {
             className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity text-lg px-8 py-6 rounded-xl group"
             asChild
           >
-            <a href="mailto:your.email@example.com">
+            <a href="mailto:ziaftra.codes@gmail.com">
               <Mail className="mr-2 group-hover:scale-110 transition-transform" />
               Send Email
             </a>
