@@ -24,7 +24,7 @@ export const About = () => {
             {
               icon: Code2,
               title: "Clean Code",
-              description: "Writing maintainable, scalable, and efficient code that stands the test of time.",
+              description: "Writing maintainable, scalable, & efficient code that stands the test of time.",
             },
             {
               icon: Lightbulb,
