@@ -1,9 +1,14 @@
 import { ArrowRight, Mail, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTheme } from "next-themes";
+import { portfolioContent } from "@/config/content";
 
 export const Hero = () => {
+  const { theme } = useTheme();
+  const photoSrc = theme === "dark" ? portfolioContent.personal.photos.dark : portfolioContent.personal.photos.light;
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 py-20 pt-28">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 py-20 pt-28 grainy-gradient">
       {/* Animated mesh background */}
       <div className="absolute inset-0" style={{ background: 'var(--gradient-mesh)' }} />
       
@@ -17,21 +22,21 @@ export const Hero = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left side - Text content */}
           <div className="space-y-8 animate-fade-in-up">
-            <div className="inline-block px-4 py-2 rounded-full bg-card/60 backdrop-blur-xl border border-primary/20 text-primary text-sm font-medium">
-              💻 Software Developer
+            <div className="inline-block px-4 py-2 rounded-full bg-card/60 backdrop-blur-xl border border-primary/20 text-primary text-sm font-medium liquid-glass">
+              {portfolioContent.hero.badge}
             </div>
             
             <div className="space-y-4">
               <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight">
-                <span className="text-foreground">Building</span>
+                <span className="text-foreground">{portfolioContent.hero.title.line1}</span>
                 <br />
                 <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-                  Digital Solutions
+                  {portfolioContent.hero.title.line2}
                 </span>
               </h1>
               
               <p className="text-xl text-muted-foreground max-w-xl">
-                Full-stack developer crafting modern web applications with clean code and exceptional user experiences
+                {portfolioContent.hero.description}
               </p>
             </div>
             
@@ -65,10 +70,14 @@ export const Hero = () => {
           <div className="flex flex-col items-center space-y-8 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
             {/* Photo placeholder with glass effect */}
             <div className="relative group">
-              <div className="w-80 h-80 rounded-3xl bg-gradient-to-br from-primary/20 via-secondary/20 to-accent/20 backdrop-blur-xl border border-primary/30 flex items-center justify-center overflow-hidden">
-                {/* Placeholder for photo */}
+              <div className="w-80 h-80 rounded-3xl bg-gradient-to-br from-primary/20 via-secondary/20 to-accent/20 backdrop-blur-xl border border-primary/30 flex items-center justify-center overflow-hidden liquid-glass">
+                {/* Profile Photo */}
                 <div className="relative w-full h-full flex items-center justify-center">
-                  <User className="w-32 h-32 text-primary/40" />
+                  <img 
+                    src={photoSrc} 
+                    alt={portfolioContent.personal.name}
+                    className="w-full h-full object-cover"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-card/80 via-transparent to-transparent" />
                 </div>
                 
