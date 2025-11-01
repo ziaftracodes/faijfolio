@@ -22,6 +22,12 @@ const Index = () => {
       
       <SectionTransition />
       
+      <div id="work">
+        <WorkSection />
+      </div>
+      
+      <SectionTransition />
+      
       <div id="about">
         <About />
       </div>
@@ -30,12 +36,6 @@ const Index = () => {
       
       <div id="skills">
         <Skills />
-      </div>
-      
-      <SectionTransition />
-      
-      <div id="work">
-        <WorkSection />
       </div>
       
       <SectionTransition />

@@ -1,22 +1,6 @@
+import { portfolioContent } from "@/config/content";
+
 export const Skills = () => {
-  const skillCategories = [
-    {
-      category: "Frontend",
-      skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Vue.js"],
-    },
-    {
-      category: "Backend",
-      skills: ["Node.js", "Python", "PostgreSQL", "GraphQL", "REST APIs"],
-    },
-    {
-      category: "Tools & Cloud",
-      skills: ["Git", "Docker", "AWS", "Vercel", "CI/CD"],
-    },
-    {
-      category: "Expertise",
-      skills: ["UI/UX Design", "Web Performance", "System Architecture", "API Design", "Testing"],
-    },
-  ];
 
   return (
     <section className="relative py-24 px-4 overflow-hidden">
@@ -24,28 +8,28 @@ export const Skills = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/5 to-background" />
       
       <div className="relative z-10 max-w-6xl mx-auto">
-        <div className="text-center mb-16 space-y-4 animate-fade-in-up">
-          <div className="inline-block px-4 py-2 rounded-full bg-card/60 backdrop-blur-xl border border-secondary/20 text-secondary text-sm font-medium">
-            Tech Stack
+        <div className="text-center mb-20 space-y-6 animate-fade-in-up">
+          <div className="inline-block px-5 py-2.5 rounded-full bg-card/60 backdrop-blur-xl border border-secondary/20 text-secondary text-sm font-medium">
+            {portfolioContent.skills.badge}
           </div>
           
-          <h2 className="text-4xl md:text-5xl font-bold">
+          <h2 className="text-5xl md:text-7xl font-bold">
             <span className="bg-gradient-to-r from-secondary via-primary to-accent bg-clip-text text-transparent">
-              Skills & Technologies
+              {portfolioContent.skills.title}
             </span>
           </h2>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8">
-          {skillCategories.map((category, catIndex) => (
+        <div className="grid md:grid-cols-2 gap-10">
+          {portfolioContent.skills.categories.map((category, catIndex) => (
             <div
               key={catIndex}
-              className="p-8 rounded-2xl bg-card/40 backdrop-blur-xl border border-primary/10 hover:border-primary/30 transition-all duration-500 animate-fade-in-up"
+              className="p-10 rounded-2xl bg-card/40 backdrop-blur-xl border border-primary/10 hover:border-primary/30 transition-all duration-500 animate-fade-in-up"
               style={{ animationDelay: `${catIndex * 0.15}s` }}
             >
-              <h3 className="text-2xl font-bold mb-6 text-foreground flex items-center gap-3">
+              <h3 className="text-2xl font-bold mb-8 text-foreground flex items-center gap-3">
                 <span className="w-2 h-2 bg-primary rounded-full animate-glow" />
-                {category.category}
+                {category.name}
               </h3>
               
               <div className="flex flex-wrap gap-3">

@@ -46,108 +46,150 @@ export const portfolioContent = {
   
   // Work/Projects Section  
   work: {  
-    title: "My Works and Projects",  
-    description: "Explore my latest projects and technical achievements",  
+    badge: "Recent Projects",
+    title: "Featured Work",  
+    description: "Explore my latest projects showcasing innovation, creativity, and technical excellence",  
     projects: [  
       {  
-        title: "E-Commerce Platform",  
-        description: "Full-stack e-commerce solution with real-time inventory management",  
-        image: "/placeholder.svg",  
-        tags: ["React", "Node.js", "PostgreSQL"],  
+        title: "AI Design Platform",  
+        description: "Next-generation design tool powered by artificial intelligence, enabling creators to bring their visions to life with unprecedented ease.",  
+        image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&q=80",  
+        tags: ["React", "AI/ML", "TypeScript"],  
         link: "https://example.com/project1",  
       },  
       {  
-        title: "AI Dashboard",  
-        description: "Analytics dashboard with machine learning insights",  
-        image: "/placeholder.svg",  
-        tags: ["Next.js", "Python", "TensorFlow"],  
+        title: "Crypto Dashboard",  
+        description: "Real-time cryptocurrency tracking and analytics platform with advanced charting and portfolio management capabilities.",  
+        image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&q=80",  
+        tags: ["Web3", "Vue.js", "D3.js"],  
         link: "https://example.com/project2",  
       },  
       {  
-        title: "Mobile App",  
-        description: "Cross-platform mobile application for social networking",  
-        image: "/placeholder.svg",  
-        tags: ["React Native", "Firebase", "Redux"],  
+        title: "Smart Home App",  
+        description: "IoT-powered home automation system with seamless device integration and intelligent energy management.",  
+        image: "https://images.unsplash.com/photo-1558002038-1055907df827?w=800&q=80",  
+        tags: ["IoT", "React Native", "Node.js"],  
         link: "https://example.com/project3",  
+      },  
+      {  
+        title: "E-Commerce Platform",  
+        description: "Modern shopping experience with AR try-on features and personalized recommendations powered by machine learning.",  
+        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",  
+        tags: ["Next.js", "Stripe", "AR"],  
+        link: "https://example.com/project4",  
+      },  
+      {  
+        title: "Fitness Tracker",  
+        description: "Comprehensive health and wellness platform with AI-powered coaching and community features.",  
+        image: "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=800&q=80",  
+        tags: ["React", "Health API", "PWA"],  
+        link: "https://example.com/project5",  
+      },  
+      {  
+        title: "Creative Studio",  
+        description: "Collaborative workspace for designers and developers with real-time editing and version control.",  
+        image: "https://images.unsplash.com/photo-1558655146-d09347e92766?w=800&q=80",  
+        tags: ["WebRTC", "Canvas", "Socket.io"],  
+        link: "https://example.com/project6",  
       },  
     ],  
   },  
   
   // About Section  
   about: {  
-    title: "About Me",  
-    description: "Passionate software developer with expertise in building scalable web applications. I specialize in front end web developments and have a vibe coding and prompt enigineering skills I also keen eye for creating intuitive user experiences.",  
-    highlights: [  
-      "Bachelors In Computer Science ",  
-      "Expertise in Html, Css, JS, Vibe Coding ",  
-      "Strong focus on performance and accessibility",  
-      "A great Communicator",  
-    ],  
-    stats: [  
-      { label: "Years Experience", value: "5+" },  
-      { label: "Projects Completed", value: "50+" },  
-      { label: "Happy Clients", value: "30+" },  
-    ],  
+    badge: "About Me",
+    title: "Faij Un Navi Khan",  
+    cards: [
+      {
+        icon: "Code2",
+        title: "A Clean Code",
+        description: "Writing maintainable, scalable, & efficient code that stands the test of time.",
+      },
+      {
+        icon: "Lightbulb",
+        title: "Innovation",
+        description: "Constantly exploring new technologies and approaches to solve complex problems.",
+      },
+      {
+        icon: "Rocket",
+        title: "Fast Delivery",
+        description: "Delivering high-quality projects on time with agile methodologies and best practices.",
+      },
+    ],
+    bio: "I'm a passionate Front End Web Dev with expertise in building modern web applications. My focus is on creating seamless user experiences while maintaining robust, scalable architectures. I love turning complex problems into simple, elegant solutions.",
   },  
   
   // Skills Section  
   skills: {  
+    badge: "Tech Stack",
     title: "Skills & Technologies",  
     description: "Technical expertise and tools I work with",  
     categories: [  
       {  
         name: "Frontend",  
-        skills: ["HTML", "CSS", "JS", "VIBE CODING", "VITE"],  
+        skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Vue.js"],  
       },  
       {  
         name: "Backend",  
-        skills: ["work in Progress"],  
+        skills: ["Node.js", "Python", "PostgreSQL", "GraphQL", "REST APIs"],  
       },  
       {  
-        name: "Tools & Others",  
-        skills: ["Git", "OpenAI", "Google AI studio", "VS Code", "Communications"],  
+        name: "Tools & Cloud",  
+        skills: ["Git", "Docker", "AWS", "Vercel", "CI/CD"],  
+      },  
+      {  
+        name: "Expertise",  
+        skills: ["UI/UX Design", "Web Performance", "System Architecture", "API Design", "Testing"],  
       },  
     ],  
-  },  
-  
-  // Contact Section  
-  contact: {  
-    title: "Get In Touch",  
-    description: "Have a project in mind? Let's work together to build something great.",  
-    email: "ziaftra.codes@gmail.com",  
-    social: [  
-      { platform: "GitHub", url: "https://github.com/ziaftracodes", icon: "Github" },  
-      { platform: "LinkedIn", url: "https://linkedin.com/in/yourusername", icon: "Linkedin" },  
-      { platform: "Instagram", url: "https://instagram.com/fayz.khn", icon: "Instagram" },  
-    ],  
-    form: {  
-      namePlaceholder: "Your Name",  
-      emailPlaceholder: "ziaftra.codes@gmail.com",  
-      messagePlaceholder: "Tell me about your project...",  
-      submitButton: "Send Message",  
-    },  
   },  
   
   // Request Work Section  
   requestWork: {  
     title: "Let's Build Something Amazing",  
-    description: "Looking for a skilled developer for your next project? I'm available for freelance work and collaborations.",  
-    services: [  
-      "Web Application Development",  
-      "UI/UX Design Implementation",  
-      "API Development & Integration",  
-      "Technical Consulting",  
-      "Code Review & Optimization",  
+    description: "Available for freelance projects and full-time opportunities",  
+    offerings: [
+      "Full-stack web applications",
+      "Responsive UI/UX design",
+      "API development & integration",
+      "Performance optimization",
+      "Technical consulting",
+    ],
+    stats: [
+      {
+        label: "Response Time",
+        value: "Within 24 hours",
+        variant: "primary",
+      },
+      {
+        label: "Availability",
+        value: "Open for projects",
+        variant: "secondary",
+      },
+    ],
+    ctaButton: "Request Quote",  
+    ctaEmail: "ziaftra.codes@gmail.com",  
+  },  
+  
+  // Contact Section  
+  contact: {  
+    badge: "Let's Connect",
+    title: "Get In Touch",  
+    description: "Have a project in mind or want to collaborate? Feel free to reach out. I'm always open to discussing new opportunities.",  
+    email: "ziaftra.codes@gmail.com",  
+    emailButtonText: "Send Email",
+    social: [  
+      { platform: "GitHub", url: "https://github.com/ziaftracodes", icon: "Github" },  
+      { platform: "LinkedIn", url: "https://linkedin.com/in/yourusername", icon: "Linkedin" },  
+      { platform: "Instagram", url: "https://instagram.com/fayz.khn", icon: "Instagram" },  
     ],  
-    ctaButton: "Start a Project",  
-    ctaLink: "#contact",  
   },  
   
   // Footer  
   footer: {  
     copyright: "© 2025 All rights reserved",  
     socialLinks: [  
-      { platform: "GitHub", url: "https://github.com/yourusername" },  
+      { platform: "GitHub", url: "https://github.com/ziaftracodes" },  
       { platform: "LinkedIn", url: "https://linkedin.com/in/yourusername" },  
       { platform: "Instagram", url: "https://instagram.com/fayz.khn" },  
     ],  
