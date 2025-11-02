@@ -60,7 +60,7 @@ export const portfolioContent = {
       {  
         title: "Custom Cursors ",  
         description: "A gallery for Cursors .",  
-        image: "/customcursors.jpg",  
+        image: "/customcursor.jpg",  
         tags: ["Web3", "Vue.js", "D3.js"],  
         link: "https://customcursors.vercel.app",  
       },  
@@ -80,7 +80,7 @@ export const portfolioContent = {
       },  
       {  
         title: "Quick Edits ",  
-        descrition :"Edit Quick with buttons ",  
+        descrition: "Edit Quick with buttons ",  
         image: "quickedits.jpg",  
         tags: ["React", "Health API", "PWA"],  
         link: "https://quick-edits.vercel.app",  
