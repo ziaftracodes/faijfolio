@@ -2,6 +2,7 @@ import { Moon, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import { portfolioContent } from "@/config/contentstoedit";
 
 export const Navigation = () => {
   const { theme, setTheme } = useTheme();
@@ -27,35 +28,23 @@ export const Navigation = () => {
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent hover:opacity-80 transition-opacity"
           >
-            Portfolio
+            {portfolioContent.navigation.brand}
           </button>
 
           {/* Navigation Links */}
           <div className="flex items-center gap-6">
-            <button
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-              className="text-foreground/80 hover:text-foreground transition-colors font-medium"
-            >
-              Home
-            </button>
-            <button
-              onClick={() => scrollToSection("work")}
-              className="text-foreground/80 hover:text-foreground transition-colors font-medium"
-            >
-              Work
-            </button>
-            <button
-              onClick={() => scrollToSection("about")}
-              className="text-foreground/80 hover:text-foreground transition-colors font-medium"
-            >
-              About
-            </button>
-            <button
-              onClick={() => scrollToSection("contact")}
-              className="text-foreground/80 hover:text-foreground transition-colors font-medium"
-            >
-              Contact
-            </button>
+            {portfolioContent.navigation.links.map((link, index) => (
+              <button
+                key={index}
+                onClick={() => link.href === "#home" 
+                  ? window.scrollTo({ top: 0, behavior: "smooth" })
+                  : scrollToSection(link.href.replace("#", ""))
+                }
+                className="text-foreground/80 hover:text-foreground transition-colors font-medium"
+              >
+                {link.label}
+              </button>
+            ))}
 
             {/* Theme Toggle */}
             {mounted && (

@@ -1,6 +1,6 @@
 import { Mail, Github, Linkedin, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { portfolioContent } from "@/config/content";
+import { portfolioContent } from "@/config/contentstoedit";
 
 const iconMap = {
   Github,

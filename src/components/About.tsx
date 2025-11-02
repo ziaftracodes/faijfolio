@@ -1,5 +1,5 @@
 import { Code2, Lightbulb, Rocket } from "lucide-react";
-import { portfolioContent } from "@/config/content";
+import { portfolioContent } from "@/config/contentstoedit";
 
 const iconMap = {
   Code2,

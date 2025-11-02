@@ -59,6 +59,54 @@ This project is built with:
 - React
 - shadcn-ui
 - Tailwind CSS
+- Three.js (3D effects)
+- React Three Fiber
+- Next Themes (dark mode)
+
+---
+
+## 🎨 Portfolio Features
+
+- **3D Effects & Parallax**: Smooth depth-based animations
+- **Glass Morphism**: Modern UI with liquid glass effects
+- **Dark/Light Mode**: Beautiful themes with automatic switching
+- **Grainy Gradients**: Textured, modern backgrounds
+- **Fully Responsive**: Works perfectly on all devices
+- **Easy to Edit**: All content in one simple file
+
+## ✏️ How to Edit Your Portfolio Content
+
+All website content (text, images, links, etc.) is centralized for easy editing:
+
+📝 **`src/config/contentstoedit.ts`**
+
+This file contains:
+- Personal information (name, role, photos)
+- Navigation links
+- Hero section content
+- Project/work showcase
+- About section
+- Skills and technologies
+- Contact information
+- Social media links
+
+**Just edit this file and save - changes appear automatically!**
+
+See `src/config/README.md` for detailed editing instructions.
+
+## 📁 Simplified Project Structure
+
+```
+src/
+├── config/
+│   └── contentstoedit.ts    ← EDIT THIS for all content
+├── components/              ← All UI components (simple & focused)
+├── pages/
+│   └── Index.tsx           ← Main page layout
+└── index.css               ← Design system & styles
+```
+
+All components pull content from `contentstoedit.ts` making updates super simple!
 
 ## How can I deploy this project?
 

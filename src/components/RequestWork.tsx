@@ -1,6 +1,6 @@
 import { CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { portfolioContent } from "@/config/content";
+import { portfolioContent } from "@/config/contentstoedit";
 
 export const RequestWork = () => {
 

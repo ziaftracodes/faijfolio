@@ -1,7 +1,7 @@
 import { ArrowRight, Mail, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "next-themes";
-import { portfolioContent } from "@/config/content";
+import { portfolioContent } from "@/config/contentstoedit";
 import { ParallaxSection } from "./ParallaxSection";
 
 export const Hero = () => {
@@ -49,28 +49,26 @@ export const Hero = () => {
             </div>
             
             <div className="flex flex-wrap gap-4 pt-4">
-              <Button 
-                size="lg" 
-                className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity px-8 py-6 rounded-xl group"
-                asChild
-              >
-                <a href="#work">
-                  <ArrowRight className="mr-2 group-hover:translate-x-1 transition-transform" />
-                  View My Work
-                </a>
-              </Button>
-              
-              <Button 
-                size="lg" 
-                variant="outline"
-                className="bg-card/40 backdrop-blur-xl border-primary/30 hover:bg-card/60 hover:border-primary/50 px-8 py-6 rounded-xl"
-                asChild
-              >
-                <a href="#contact">
-                  <Mail className="mr-2" />
-                  Contact Me
-                </a>
-              </Button>
+              {portfolioContent.hero.ctas.map((cta, index) => {
+                const Icon = cta.icon === "ArrowRight" ? ArrowRight : Mail;
+                return (
+                  <Button 
+                    key={index}
+                    size="lg" 
+                    className={index === 0 
+                      ? "bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity px-8 py-6 rounded-xl group"
+                      : "bg-card/40 backdrop-blur-xl border-primary/30 hover:bg-card/60 hover:border-primary/50 px-8 py-6 rounded-xl"
+                    }
+                    variant={index === 0 ? "default" : "outline"}
+                    asChild
+                  >
+                    <a href={cta.href}>
+                      <Icon className={index === 0 ? "mr-2 group-hover:translate-x-1 transition-transform" : "mr-2"} />
+                      {cta.label}
+                    </a>
+                  </Button>
+                );
+              })}
             </div>
             </div>
           </ParallaxSection>
@@ -105,26 +103,26 @@ export const Hero = () => {
             
             {/* Quick action buttons below photo */}
             <div className="flex gap-4">
-              <Button 
-                variant="outline"
-                className="bg-card/40 backdrop-blur-xl border-primary/30 hover:bg-card/60 hover:border-primary/50 rounded-xl"
-                asChild
-              >
-                <a href="#about">
-                  <User className="mr-2 w-4 h-4" />
-                  About Me
-                </a>
-              </Button>
-              
-              <Button 
-                variant="outline"
-                className="bg-card/40 backdrop-blur-xl border-secondary/30 hover:bg-card/60 hover:border-secondary/50 rounded-xl"
-                asChild
-              >
-                <a href="#skills">
-                  Skills
-                </a>
-              </Button>
+              {portfolioContent.hero.quickActions.map((action, index) => {
+                const Icon = action.icon === "User" ? User : null;
+                return (
+                  <Button 
+                    key={index}
+                    variant="outline"
+                    className={`bg-card/40 backdrop-blur-xl ${
+                      index === 0 
+                        ? "border-primary/30 hover:bg-card/60 hover:border-primary/50" 
+                        : "border-secondary/30 hover:bg-card/60 hover:border-secondary/50"
+                    } rounded-xl`}
+                    asChild
+                  >
+                    <a href={action.href}>
+                      {Icon && <Icon className="mr-2 w-4 h-4" />}
+                      {action.label}
+                    </a>
+                  </Button>
+                );
+              })}
             </div>
             </div>
           </ParallaxSection>

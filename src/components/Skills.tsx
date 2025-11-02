@@ -1,4 +1,4 @@
-import { portfolioContent } from "@/config/content";
+import { portfolioContent } from "@/config/contentstoedit";
 
 export const Skills = () => {
 
