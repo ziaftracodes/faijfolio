@@ -4,7 +4,7 @@
 export const portfolioContent = {  
   // Personal Information  
   personal: {  
-    name: "Faij Un Navi Khan",  
+    name: "Faij Un-Navi Khan",  
     role: "Software Developer",  
     tagline: "Full-stack developer crafting modern web applications with clean code and exceptional user experiences",  
       
