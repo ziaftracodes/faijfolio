@@ -51,18 +51,18 @@ export const portfolioContent = {
     description: "Explore my latest projects showcasing innovation, creativity, and technical excellence",  
     projects: [  
       {  
-        title: "AI Design Platform",  
-        description: "Next-generation design tool powered by artificial intelligence, enabling creators to bring their visions to life with unprecedented ease.",  
+        title: "Cosmic Library ",  
+        description: "Next-generation Library .",  
         image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&q=80",  
         tags: ["React", "AI/ML", "TypeScript"],  
-        link: "https://example.com/project1",  
+        link: "https://cosmiclibrary.vercel.app",  
       },  
       {  
-        title: "Crypto Dashboard",  
-        description: "Real-time cryptocurrency tracking and analytics platform with advanced charting and portfolio management capabilities.",  
-        image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&q=80",  
+        title: "Custom Cursors ",  
+        description: "A gallery for Cursors .",  
+        image: "https://images.unspl/photo-1639762681485-074b7f938ba0?w=800&q=80",  
         tags: ["Web3", "Vue.js", "D3.js"],  
-        link: "https://example.com/project2",  
+        link: "https://customcursors.vercel.app",  
       },  
       {  
         title: "Smart Home App",  
