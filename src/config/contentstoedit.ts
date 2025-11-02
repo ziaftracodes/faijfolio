@@ -10,8 +10,8 @@ export const portfolioContent = {
       
     // Photos - Update these paths to your actual images  
     photos: {  
-      light: "/1761734804016~2.jpg", // Photo for light mode  
-      dark: "/1761737527474~2.jpg",  // Photo for dark mode  
+      light: "/1761737527474~2.jpg", // Photo for light mode  
+      dark: "/1761734804016~2.jpg",  // Photo for dark mode  
     },  
   },  
   
