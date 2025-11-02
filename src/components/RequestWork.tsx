@@ -7,11 +7,7 @@ export const RequestWork = () => {
   return (
     <section className="relative py-24 px-4 overflow-hidden">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/10 to-background" />
-      
-      {/* Glow effects */}
-      <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[120px]" />
-      <div className="absolute top-1/2 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-[120px]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/5 to-background" />
       
       <div className="relative z-10 max-w-5xl mx-auto">
         <div className="p-16 rounded-3xl bg-card/40 backdrop-blur-xl border border-primary/20 shadow-2xl">

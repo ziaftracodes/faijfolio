@@ -10,8 +10,8 @@ const iconMap = {
 export const About = () => {
   return (
     <section className="relative py-24 px-4 overflow-hidden">
-      {/* Background mesh gradient */}
-      <div className="absolute inset-0" style={{ background: 'var(--gradient-mesh)' }} />
+      {/* Background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/5 to-background" />
       
       <div className="relative z-10 max-w-6xl mx-auto">
         <div className="text-center mb-20 space-y-6 animate-fade-in-up">

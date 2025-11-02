@@ -4,8 +4,8 @@ import { ExternalLink } from "lucide-react";
 export const WorkSection = () => {
   return (
     <section className="relative py-24 px-4 overflow-hidden">
-      {/* Background with mesh gradient */}
-      <div className="absolute inset-0" style={{ background: 'var(--gradient-mesh)' }} />
+      {/* Background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/5 to-background" />
       
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto">
