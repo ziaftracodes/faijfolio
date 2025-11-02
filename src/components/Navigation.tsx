@@ -26,7 +26,7 @@ export const Navigation = () => {
           {/* Logo/Brand */}
           <button 
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent hover:opacity-80 transition-opacity"
+            className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent hover:opacity-80 transition-all duration-300 hover:scale-105"
           >
             {portfolioContent.navigation.brand}
           </button>
@@ -40,7 +40,7 @@ export const Navigation = () => {
                   ? window.scrollTo({ top: 0, behavior: "smooth" })
                   : scrollToSection(link.href.replace("#", ""))
                 }
-                className="text-foreground/80 hover:text-foreground transition-colors font-medium"
+                className="text-foreground/80 hover:text-foreground transition-all duration-300 font-medium hover:scale-110 hover:text-primary"
               >
                 {link.label}
               </button>
@@ -52,7 +52,7 @@ export const Navigation = () => {
                 variant="outline"
                 size="icon"
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                className="bg-card/40 backdrop-blur-xl border-border hover:bg-card/60 rounded-lg"
+                className="bg-card/40 backdrop-blur-xl border-border hover:bg-card/60 rounded-lg hover:scale-110 hover:border-primary/50 transition-all duration-300"
               >
                 {theme === "dark" ? (
                   <Sun className="h-5 w-5 text-primary" />

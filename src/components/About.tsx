@@ -19,8 +19,8 @@ export const About = () => {
             {portfolioContent.about.badge}
           </div>
           
-          <h2 className="text-5xl md:text-7xl font-bold">
-            <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+          <h2 className="text-5xl md:text-7xl font-bold transition-all duration-300 hover:scale-105">
+            <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
               {portfolioContent.about.title}
             </span>
           </h2>
@@ -32,18 +32,18 @@ export const About = () => {
             return (
               <div
                 key={index}
-                className="group relative p-10 rounded-2xl bg-card/40 backdrop-blur-xl border border-primary/10 hover:border-primary/30 transition-all duration-500 hover:scale-105 animate-fade-in-up"
+                className="group relative p-10 rounded-2xl bg-card/40 backdrop-blur-xl border border-primary/10 hover:border-primary/30 transition-all duration-500 hover:scale-[1.08] hover:shadow-[0_0_40px_rgba(59,193,255,0.3)] animate-fade-in-up cursor-pointer"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <div className="mb-6 p-4 rounded-xl bg-primary/10 w-fit">
                   <IconComponent className="w-8 h-8 text-primary" />
                 </div>
                 
-                <h3 className="text-xl font-bold mb-4 text-foreground group-hover:text-primary transition-colors">
+                <h3 className="text-xl font-bold mb-4 text-foreground group-hover:text-primary transition-all duration-300 group-hover:translate-x-2">
                   {item.title}
                 </h3>
                 
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors duration-300">
                   {item.description}
                 </p>
                 
@@ -54,8 +54,8 @@ export const About = () => {
           })}
         </div>
         
-        <div className="mt-20 p-10 rounded-2xl bg-card/40 backdrop-blur-xl border border-primary/20 animate-fade-in">
-          <p className="text-lg text-muted-foreground leading-relaxed max-w-4xl mx-auto text-center">
+        <div className="mt-20 p-10 rounded-2xl bg-card/40 backdrop-blur-xl border border-primary/20 animate-fade-in hover:border-primary/30 hover:shadow-[0_0_40px_rgba(59,193,255,0.2)] transition-all duration-500 hover:scale-[1.02]">
+          <p className="text-lg text-muted-foreground leading-relaxed max-w-4xl mx-auto text-center hover:text-foreground transition-colors duration-300">
             {portfolioContent.about.bio}
           </p>
         </div>

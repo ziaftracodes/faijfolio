@@ -21,13 +21,13 @@ export const Contact = () => {
             {portfolioContent.contact.badge}
           </div>
           
-          <h2 className="text-5xl md:text-7xl font-bold">
-            <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+          <h2 className="text-5xl md:text-7xl font-bold transition-all duration-300 hover:scale-105">
+            <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
               {portfolioContent.contact.title}
             </span>
           </h2>
           
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed hover:text-foreground transition-colors duration-300">
             {portfolioContent.contact.description}
           </p>
         </div>
@@ -35,7 +35,7 @@ export const Contact = () => {
         <div className="mt-16 flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in" style={{ animationDelay: "0.2s" }}>
           <Button
             size="lg"
-            className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity text-lg px-10 py-7 rounded-xl group"
+            className="bg-gradient-to-r from-primary to-accent hover:opacity-90 transition-opacity text-lg px-10 py-7 rounded-xl group hover:scale-105"
             asChild
           >
             <a href={`mailto:${portfolioContent.contact.email}`}>
@@ -49,12 +49,12 @@ export const Contact = () => {
           {portfolioContent.contact.social.map((social, index) => {
             const IconComponent = iconMap[social.icon as keyof typeof iconMap];
             return (
-              <a
+                <a
                 key={index}
                 href={social.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group p-5 rounded-xl bg-card/40 backdrop-blur-xl border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:scale-110"
+                className="group p-5 rounded-xl bg-card/40 backdrop-blur-xl border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:scale-110 hover:shadow-[0_0_20px_rgba(59,193,255,0.3)]"
                 aria-label={social.platform}
               >
                 <IconComponent className="w-6 h-6 text-muted-foreground group-hover:text-primary transition-colors" />

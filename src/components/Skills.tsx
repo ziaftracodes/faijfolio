@@ -13,8 +13,8 @@ export const Skills = () => {
             {portfolioContent.skills.badge}
           </div>
           
-          <h2 className="text-5xl md:text-7xl font-bold">
-            <span className="bg-gradient-to-r from-secondary via-primary to-accent bg-clip-text text-transparent">
+          <h2 className="text-5xl md:text-7xl font-bold transition-all duration-300 hover:scale-105">
+            <span className="bg-gradient-to-r from-accent via-primary to-accent bg-clip-text text-transparent">
               {portfolioContent.skills.title}
             </span>
           </h2>
@@ -24,10 +24,10 @@ export const Skills = () => {
           {portfolioContent.skills.categories.map((category, catIndex) => (
             <div
               key={catIndex}
-              className="p-10 rounded-2xl bg-card/40 backdrop-blur-xl border border-primary/10 hover:border-primary/30 transition-all duration-500 animate-fade-in-up"
+              className="group p-10 rounded-2xl bg-card/40 backdrop-blur-xl border border-primary/10 hover:border-primary/30 transition-all duration-500 hover:scale-[1.05] hover:shadow-[0_0_40px_rgba(59,193,255,0.3)] animate-fade-in-up cursor-pointer"
               style={{ animationDelay: `${catIndex * 0.15}s` }}
             >
-              <h3 className="text-2xl font-bold mb-8 text-foreground flex items-center gap-3">
+              <h3 className="text-2xl font-bold mb-8 text-foreground flex items-center gap-3 group-hover:text-primary transition-colors duration-300">
                 <span className="w-2 h-2 bg-primary rounded-full animate-glow" />
                 {category.name}
               </h3>
@@ -36,7 +36,7 @@ export const Skills = () => {
                 {category.skills.map((skill, skillIndex) => (
                   <div
                     key={skillIndex}
-                    className="group relative px-4 py-2 rounded-lg bg-primary/5 hover:bg-primary/10 border border-primary/20 hover:border-primary/40 transition-all duration-300 cursor-default"
+                    className="group relative px-4 py-2 rounded-lg bg-primary/5 hover:bg-primary/10 border border-primary/20 hover:border-primary/40 transition-all duration-300 cursor-default hover:scale-110 hover:shadow-[0_0_15px_rgba(59,193,255,0.3)]"
                   >
                     <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors">
                       {skill}

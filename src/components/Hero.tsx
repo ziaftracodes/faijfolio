@@ -30,20 +30,20 @@ export const Hero = () => {
           {/* Left side - Text content */}
           <ParallaxSection speed={0.2}>
             <div className="space-y-8 animate-fade-in-up">
-            <div className="inline-block px-4 py-2 rounded-full bg-card/60 backdrop-blur-xl border border-primary/20 text-primary text-sm font-medium liquid-glass">
+            <div className="inline-block px-4 py-2 rounded-full bg-card/60 backdrop-blur-xl border border-primary/20 text-primary text-sm font-medium">
               {portfolioContent.hero.badge}
             </div>
             
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight">
+              <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight transition-all duration-300 hover:scale-105">
                 <span className="text-foreground">{portfolioContent.hero.title.line1}</span>
                 <br />
-                <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
                   {portfolioContent.hero.title.line2}
                 </span>
               </h1>
               
-              <p className="text-xl text-muted-foreground max-w-xl">
+              <p className="text-xl text-muted-foreground max-w-xl hover:text-foreground transition-colors duration-300">
                 {portfolioContent.hero.description}
               </p>
             </div>
@@ -56,8 +56,8 @@ export const Hero = () => {
                     key={index}
                     size="lg" 
                     className={index === 0 
-                      ? "bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity px-8 py-6 rounded-xl group"
-                      : "bg-card/40 backdrop-blur-xl border-primary/30 hover:bg-card/60 hover:border-primary/50 px-8 py-6 rounded-xl"
+                      ? "bg-gradient-to-r from-primary to-accent hover:opacity-90 transition-all duration-300 hover:scale-105 px-8 py-6 rounded-xl group"
+                      : "bg-card/40 backdrop-blur-xl border-primary/30 hover:bg-card/60 hover:border-primary/50 px-8 py-6 rounded-xl hover:scale-105 transition-all duration-300"
                     }
                     variant={index === 0 ? "default" : "outline"}
                     asChild
@@ -78,7 +78,7 @@ export const Hero = () => {
             <div className="flex flex-col items-center space-y-8 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
             {/* Photo placeholder with glass effect */}
             <div className="relative group">
-              <div className="w-80 h-80 rounded-3xl bg-gradient-to-br from-primary/20 via-secondary/20 to-accent/20 backdrop-blur-xl border border-primary/30 flex items-center justify-center overflow-hidden liquid-glass">
+              <div className="w-80 h-80 rounded-3xl bg-gradient-to-br from-primary/20 via-accent/20 to-accent/20 backdrop-blur-xl border border-primary/30 flex items-center justify-center overflow-hidden hover:border-primary/50 transition-all duration-500 hover:scale-105 hover:shadow-[0_0_50px_rgba(59,193,255,0.4)]">
                 {/* Profile Photo */}
                 <div className="relative w-full h-full flex items-center justify-center">
                   <img 
@@ -111,9 +111,9 @@ export const Hero = () => {
                     variant="outline"
                     className={`bg-card/40 backdrop-blur-xl ${
                       index === 0 
-                        ? "border-primary/30 hover:bg-card/60 hover:border-primary/50" 
-                        : "border-secondary/30 hover:bg-card/60 hover:border-secondary/50"
-                    } rounded-xl`}
+                        ? "border-primary/30 hover:bg-card/60 hover:border-primary/50 hover:scale-110" 
+                        : "border-accent/30 hover:bg-card/60 hover:border-accent/50 hover:scale-110"
+                    } rounded-xl transition-all duration-300`}
                     asChild
                   >
                     <a href={action.href}>

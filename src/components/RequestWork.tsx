@@ -10,15 +10,15 @@ export const RequestWork = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/5 to-background" />
       
       <div className="relative z-10 max-w-5xl mx-auto">
-        <div className="p-16 rounded-3xl bg-card/40 backdrop-blur-xl border border-primary/20 shadow-2xl">
+        <div className="p-16 rounded-3xl bg-card/40 backdrop-blur-xl border border-primary/20 shadow-2xl hover:border-primary/40 hover:shadow-[0_0_50px_rgba(59,193,255,0.3)] transition-all duration-500 hover:scale-[1.02]">
           <div className="text-center mb-16 space-y-6 animate-fade-in-up">
-            <h2 className="text-5xl md:text-7xl font-bold">
-              <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+            <h2 className="text-5xl md:text-7xl font-bold transition-all duration-300 hover:scale-105">
+              <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
                 {portfolioContent.requestWork.title}
               </span>
             </h2>
             
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto hover:text-foreground transition-colors duration-300">
               {portfolioContent.requestWork.description}
             </p>
           </div>
@@ -58,7 +58,7 @@ export const RequestWork = () => {
           <div className="flex justify-center animate-fade-in" style={{ animationDelay: "0.6s" }}>
             <Button
               size="lg"
-              className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity text-lg px-12 py-7 rounded-xl"
+              className="bg-gradient-to-r from-primary to-accent hover:opacity-90 transition-all duration-300 hover:scale-105 text-lg px-12 py-7 rounded-xl"
               asChild
             >
               <a href={`mailto:${portfolioContent.requestWork.ctaEmail}`}>

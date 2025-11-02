@@ -15,13 +15,13 @@ export const WorkSection = () => {
             {portfolioContent.work.badge}
           </div>
           
-          <h2 className="text-5xl md:text-7xl font-bold">
-            <span className="bg-gradient-to-r from-secondary via-accent to-primary bg-clip-text text-transparent">
+          <h2 className="text-5xl md:text-7xl font-bold transition-all duration-300 hover:scale-105">
+            <span className="bg-gradient-to-r from-accent via-primary to-accent bg-clip-text text-transparent">
               {portfolioContent.work.title}
             </span>
           </h2>
           
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto hover:text-foreground transition-colors duration-300">
             {portfolioContent.work.description}
           </p>
         </div>
@@ -59,11 +59,11 @@ export const WorkSection = () => {
                 
                 {/* Content */}
                 <div className="p-6 space-y-4">
-                  <h3 className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors">
+                  <h3 className="text-2xl font-bold text-foreground group-hover:text-primary transition-all duration-300 group-hover:translate-x-2">
                     {project.title}
                   </h3>
                   
-                  <p className="text-muted-foreground line-clamp-2">
+                  <p className="text-muted-foreground line-clamp-2 group-hover:text-foreground transition-colors duration-300">
                     {project.description}
                   </p>
                   
